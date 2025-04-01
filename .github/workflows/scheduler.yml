@@ -60,16 +60,15 @@ jobs:
           echo ".cache.json" >> dist/.gitignore
 
       - name: Update
-        run: npm run build
         env:
-          CONTRIBKIT_CROWDIN_PROJECT_ID: 606145
           CONTRIBKIT_GITHUB_TYPE: organization
+        run: npm run build
 
       - name: Upload artifacts
         if: github.event_name == 'pull_request'
         uses: actions/upload-artifact@v4
         with:
-          name: sponsors
+          name: dist
           path: dist
           if-no-files-found: 'error'
 
@@ -83,4 +82,4 @@ jobs:
           branch: dist
           directory: dist
           force: false
-          message: "chore: update sponsors"
+          message: "chore: update contributors"
