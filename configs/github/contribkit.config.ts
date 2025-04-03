@@ -22,7 +22,7 @@ export default defineConfig({
       preset: tierPresets.xl,
     },
     {
-      title: 'Overlords',
+      title: 'Champions',
       monthlyDollars: 300,
       preset: tierPresets.xl,
     },
