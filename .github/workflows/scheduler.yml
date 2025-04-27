@@ -30,6 +30,8 @@ jobs:
         with:
           ref: dist
           path: dist
+          persist-credentials: false  # prevent using GITHUB_TOKEN to commit
+          fetch-depth: 0
 
       - name: Set node
         uses: actions/setup-node@v4
@@ -74,7 +76,7 @@ jobs:
           path: dist
           if-no-files-found: 'error'
 
-      - name: Commit
+      - name: Commit and push
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
         uses: actions-js/push@v1.5
         with:
