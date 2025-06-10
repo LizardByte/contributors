@@ -7,6 +7,6 @@
     "@lizardbyte/contribkit": "2025.526.10013"
   },
   "devDependencies": {
-    "@types/node": "^22.13.8"
+    "@types/node": "^24.0.0"
   }
 }
