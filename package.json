@@ -4,7 +4,7 @@
     "build": "bash build.sh"
   },
   "dependencies": {
-    "@lizardbyte/contribkit": "2025.612.34035"
+    "@lizardbyte/contribkit": "2025.615.10025"
   },
   "devDependencies": {
     "@types/node": "^24.0.0"
