@@ -16,8 +16,36 @@ text {
 }
 </style>
 <text x="400" y="40" text-anchor="middle" class="contribkit-tier-title">Special Supporters</text>
+  <a xlink:href="https://m.do.co/c/a3da07748203" class="contribkit-link" target="_blank" id="DigitalOcean">
+    <svg x="173.0769230769231" y="90" width="120" height="60" viewBox="0 0 200 100">
+      <rect width="200" height="100" fill="transparent" />
+      
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="65.2 173.5 180 180" style="enable-background:new 65.2 173.5 180 180;" xml:space="preserve">
+      <style type="text/css">
+      	.st0{fill:#0080FF;}
+      </style>
+      <g id="XMLID_229_">
+      	<g id="XMLID_690_">
+      		<g id="XMLID_691_">
+      			<g>
+      				<g id="XMLID_44_">
+      					<g id="XMLID_48_">
+      						<path id="XMLID_49_" class="st0" d="M155.2,351.7v-34.2c36.2,0,64.3-35.9,50.4-74c-5.1-14.1-16.4-25.4-30.5-30.5        c-38.1-13.8-74,14.2-74,50.4l0,0H67c0-57.7,55.8-102.7,116.3-83.8c26.4,8.3,47.5,29.3,55.7,55.7        C257.9,295.9,213,351.7,155.2,351.7z"/>
+      					</g>
+      					<polygon id="XMLID_47_" class="st0" points="155.3,317.6 121.3,317.6 121.3,283.6 121.3,283.6 155.3,283.6 155.3,283.6             "/>
+      					<polygon id="XMLID_46_" class="st0" points="121.3,343.8 95.1,343.8 95.1,343.8 95.1,317.6 121.3,317.6      "/>
+      					<path id="XMLID_45_" class="st0" d="M95.1,317.6H73.2l0,0v-21.9l0,0h21.9l0,0V317.6z"/>
+      				</g>
+      			</g>
+      		</g>
+      	</g>
+      </g>
+    </svg>
+    </svg>
+  </a>
   <a xlink:href="https://www.jetbrains.com/" class="contribkit-link" target="_blank" id="JetBrains">
-    <svg x="243.0769230769231" y="90" width="60" height="60" viewBox="0 0 64 64">
+    <svg x="313.0769230769231" y="90" width="60" height="60" viewBox="0 0 64 64">
+      <rect width="64" height="64" fill="transparent" />
       
     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
       <defs>
@@ -34,7 +62,8 @@ text {
     </svg>
   </a>
   <a xlink:href="https://github.com/features/copilot" class="contribkit-link" target="_blank" id="GitHubCopilot">
-    <svg x="323.0769230769231" y="90" width="73.84615384615384" height="59.99999999999999" viewBox="0 0 256 208">
+    <svg x="393.0769230769231" y="90" width="73.84615384615384" height="59.99999999999999" viewBox="0 0 256 208">
+      <rect width="256" height="208" fill="transparent" />
       
     <svg width="256px" height="208px" viewBox="0 0 256 208" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
       <title>GitHub Copilot</title>
@@ -45,7 +74,8 @@ text {
     </svg>
   </a>
   <a xlink:href="https://about.codecov.io/" class="contribkit-link" target="_blank" id="Codecov">
-    <svg x="416.9230769230769" y="90" width="60" height="60" viewBox="0 0 60 60">
+    <svg x="486.9230769230769" y="90" width="60" height="60" viewBox="0 0 60 60">
+      <rect width="60" height="60" fill="transparent" />
       
     <svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <title>codecov</title>
@@ -59,7 +89,8 @@ text {
     </svg>
   </a>
   <a xlink:href="https://crowdin.com/" class="contribkit-link" target="_blank" id="Crowdin">
-    <svg x="496.9230769230769" y="90" width="60" height="60" viewBox="0 0 248 248">
+    <svg x="566.9230769230769" y="90" width="60" height="60" viewBox="0 0 248 248">
+      <rect width="248" height="248" fill="transparent" />
       
     <svg width="248" height="248" viewBox="0 0 248 248" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M163.024 177.312C157.024 177.312 151.667 175.514 147.239 171.995C141.954 167.851 137.739 161.674 137.597 154.402C137.525 150.727 141.525 150.727 141.525 150.727C141.525 150.727 148.025 150.649 151.167 150.649C154.31 150.727 155.238 155.106 155.381 156.2C156.595 166.053 162.166 170.353 166.452 172.308C169.023 173.481 168.38 177.156 163.024 177.312Z" fill="white"/>
