@@ -6,26 +6,11 @@ const specialSupporters = [
     url: 'https://m.do.co/c/a3da07748203',
     logoUrl: 'https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_icon_blue.svg',
     svgContent: `
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="65.2 173.5 180 180" style="enable-background:new 65.2 173.5 180 180;" xml:space="preserve">
-      <style type="text/css">
-      	.st0{fill:#0080FF;}
-      </style>
-      <g id="XMLID_229_">
-      	<g id="XMLID_690_">
-      		<g id="XMLID_691_">
-      			<g>
-      				<g id="XMLID_44_">
-      					<g id="XMLID_48_">
-      						<path id="XMLID_49_" class="st0" d="M155.2,351.7v-34.2c36.2,0,64.3-35.9,50.4-74c-5.1-14.1-16.4-25.4-30.5-30.5        c-38.1-13.8-74,14.2-74,50.4l0,0H67c0-57.7,55.8-102.7,116.3-83.8c26.4,8.3,47.5,29.3,55.7,55.7        C257.9,295.9,213,351.7,155.2,351.7z"/>
-      					</g>
-      					<polygon id="XMLID_47_" class="st0" points="155.3,317.6 121.3,317.6 121.3,283.6 121.3,283.6 155.3,283.6 155.3,283.6             "/>
-      					<polygon id="XMLID_46_" class="st0" points="121.3,343.8 95.1,343.8 95.1,343.8 95.1,317.6 121.3,317.6      "/>
-      					<path id="XMLID_45_" class="st0" d="M95.1,317.6H73.2l0,0v-21.9l0,0h21.9l0,0V317.6z"/>
-      				</g>
-      			</g>
-      		</g>
-      	</g>
-      </g>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175 175">
+      <path fill="#0080FF" d="M87.5,176.4v-34.2c36.2,0,64.3-35.9,50.4-74c-5.1-14.1-16.4-25.4-30.5-30.5c-38.1-13.8-74,14.2-74,50.4H-0.7c0-57.7,55.8-102.7,116.3-83.8c26.4,8.3,47.5,29.3,55.7,55.7C173.9,120.6,129,176.4,87.5,176.4z"/>
+      <polygon fill="#0080FF" points="87.6,142.3 53.6,142.3 53.6,108.3 53.6,108.3 87.6,108.3 87.6,108.3"/>
+      <polygon fill="#0080FF" points="53.6,168.5 27.4,168.5 27.4,168.5 27.4,142.3 53.6,142.3"/>
+      <path fill="#0080FF" d="M27.4,142.3H5.5v-21.9h21.9V142.3z"/>
     </svg>`,
   },
   {
