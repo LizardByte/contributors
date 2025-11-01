@@ -6,7 +6,7 @@ const specialSupporters = [
     url: 'https://m.do.co/c/a3da07748203',
     logoUrl: 'https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_icon_blue.svg',
     svgContent: `
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="65.2 173.5 180 180" style="enable-background:new 65.2 173.5 180 180;" xml:space="preserve">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="180" height="180" viewBox="65.2 173.5 180 180" style="enable-background:new 65.2 173.5 180 180;" xml:space="preserve">
       <style type="text/css">
       	.st0{fill:#0080FF;}
       </style>
