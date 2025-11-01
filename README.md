@@ -9,7 +9,5 @@ images from sponsors, and contributors.
 ## Sponsors
 
 <p align="center">
-  <a href="https://app.lizardbyte.dev" aria-label="Sponsor LizardByte">
-    <img src='https://raw.githubusercontent.com/LizardByte/sponsors/refs/heads/dist/sponsors.svg'/>
-  </a>
+  <img src='https://cdn.jsdelivr.net/gh/LizardByte/contributors@dist/sponsors.svg' alt="Sponsors"/>
 </p>
