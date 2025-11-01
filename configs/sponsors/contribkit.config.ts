@@ -1,4 +1,7 @@
-import { BadgePreset, defineConfig, tierPresets } from '@lizardbyte/contribkit'
+import {
+  defineConfig,
+  tierPresets,
+} from '@lizardbyte/contribkit'
 
 const createThemeAwareSvgStyle = (pathClass: string, lightColor: string = '#000000', darkColor: string = '#ffffff') => `
       <style>
@@ -168,24 +171,8 @@ function extractSvgDimensions(svgContent: string): { width: number, height: numb
   return { width, height };
 }
 
-const past: BadgePreset = {
-  avatar: {
-    size: 20,
-  },
-  boxWidth: 22,
-  boxHeight: 22,
-  container: {
-    sidePadding: 35,
-  },
-}
-
 export default defineConfig({
   tiers: [
-    {
-      title: 'Past Sponsors',
-      monthlyDollars: -1,
-      preset: past,
-    },
     {
       title: 'Backers',
       preset: tierPresets.small,
