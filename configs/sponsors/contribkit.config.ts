@@ -51,7 +51,7 @@ const specialSupporters = [
     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
       <defs>
         <linearGradient id="a" x1=".850001" x2="62.62" y1="62.72" y2="1.81" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#FF9419"/>
+          <stop offset="0" stop-color="#FF9419"/>
           <stop offset=".43" stop-color="#FF021D"/>
           <stop offset=".99" stop-color="#E600FF"/>
         </linearGradient>
@@ -142,7 +142,7 @@ function createWrappedSponsorSvg(
   const scaledHeight = svgHeight * scale;
 
   return `
-  <a xlink:href="${sponsor.url}" class="contribkit-link" target="_blank" id="${sponsor.name.replace(/\s+/g, '')}">
+  <a href="${sponsor.url}" class="contribkit-link" target="_blank" id="${sponsor.name.replaceAll(/\s+/g, '')}">
     <svg x="${x}" y="${y}" width="${scaledWidth}" height="${scaledHeight}" viewBox="0 0 ${svgWidth} ${svgHeight}">
       <rect width="${svgWidth}" height="${svgHeight}" fill="transparent" />
       ${svgContent}
@@ -153,20 +153,23 @@ function createWrappedSponsorSvg(
 // Function to extract dimensions from SVG content
 function extractSvgDimensions(svgContent: string): { width: number, height: number } {
   // Try to get dimensions from viewBox first
-  const viewBoxMatch = svgContent.match(/viewBox=['"]([^'"]*)['"]/);
+  const viewBoxRegex = /viewBox=['"]([^'"]*)['"]/;
+  const viewBoxMatch = viewBoxRegex.exec(svgContent);
   if (viewBoxMatch) {
-    const [, minX, minY, width, height] = viewBoxMatch[1].split(/\s+/).map(Number);
-    if (!isNaN(width) && !isNaN(height)) {
+    const [, , , width, height] = viewBoxMatch[1].split(/\s+/).map(Number);
+    if (!Number.isNaN(width) && !Number.isNaN(height)) {
       return { width, height };
     }
   }
 
   // Try to get from width/height attributes
-  const widthMatch = svgContent.match(/width=['"]([^'"]*)['"]/);
-  const heightMatch = svgContent.match(/height=['"]([^'"]*)['"]/);
+  const widthRegex = /width=['"]([^'"]*)['"]/;
+  const heightRegex = /height=['"]([^'"]*)['"]/;
+  const widthMatch = widthRegex.exec(svgContent);
+  const heightMatch = heightRegex.exec(svgContent);
 
-  const width = widthMatch ? parseInt(widthMatch[1]) : 200;
-  const height = heightMatch ? parseInt(heightMatch[1]) : 100;
+  const width = widthMatch ? Number.parseInt(widthMatch[1]) : 200;
+  const height = heightMatch ? Number.parseInt(heightMatch[1]) : 100;
 
   return { width, height };
 }
@@ -218,7 +221,6 @@ export default defineConfig({
           compose.addSpan(30);
 
           const padding = 20; // Padding between supporters
-          let currentX = padding;
           const supporters = [...specialSupporters];
 
           while (supporters.length) {
@@ -232,17 +234,19 @@ export default defineConfig({
               const scale = iconHeight / height;
               const scaledWidth = width * scale;
 
-              if (rowWidth + scaledWidth + padding > config.width!) {
+              if (rowWidth + scaledWidth + padding > config.width) {
                 break;
               }
 
-              row.push(supporters.shift()!);
+              const shiftedSupporter = supporters.shift();
+              if (shiftedSupporter) {
+                row.push(shiftedSupporter);
+              }
               rowWidth += scaledWidth + padding;
             }
 
             // Center row horizontally
-            const startX = (config.width! - rowWidth + padding) / 2;
-            currentX = startX;
+            let currentX = (config.width - rowWidth + padding) / 2;
 
             // Add supporters in row
             for (const supporter of row) {
