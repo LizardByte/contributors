@@ -61,6 +61,11 @@ jobs:
             echo "CONTRIBKIT_GITHUB_CONTRIBUTORS_LOGIN=${{ github.repository_owner }}"
           } >> ./configs/github/.env
 
+          # github contributions
+          {
+            echo "CONTRIBKIT_GITHUB_CONTRIBUTIONS_TOKEN=${{ secrets.GH_BOT_TOKEN }}"
+          } >> ./configs/githubContributions/.env
+
       - name: Setup dist
         run: |
           # empty dist directory
