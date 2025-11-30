@@ -9,7 +9,8 @@
  */
 export function extractSvgDimensions(svgContent: string): { width: number; height: number } {
   // Try to get dimensions from viewBox first
-  const viewBoxMatch = svgContent.match(/viewBox=['"]([^'"]*)['"]/);
+  const viewBoxRegex = /viewBox=['"]([^'"]*)['"]/;
+  const viewBoxMatch = viewBoxRegex.exec(svgContent);
   if (viewBoxMatch) {
     const [, , width, height] = viewBoxMatch[1].split(/\s+/).map(Number);
     // Check that both width and height are valid numbers (not NaN and not undefined)
@@ -19,8 +20,10 @@ export function extractSvgDimensions(svgContent: string): { width: number; heigh
   }
 
   // Try to get from width/height attributes
-  const widthMatch = svgContent.match(/width=['"]([^'"]*)['"]/);
-  const heightMatch = svgContent.match(/height=['"]([^'"]*)['"]/);
+  const widthRegex = /width=['"]([^'"]*)['"]/;
+  const widthMatch = widthRegex.exec(svgContent);
+  const heightRegex = /height=['"]([^'"]*)['"]/;
+  const heightMatch = heightRegex.exec(svgContent);
 
   const width = widthMatch ? Number.parseInt(widthMatch[1], 10) : 200;
   const height = heightMatch ? Number.parseInt(heightMatch[1], 10) : 100;
