@@ -12,6 +12,10 @@ crowdin_projects=(
   614257
 )
 
+github_accounts=(
+  "ReenigneArcher"
+)
+
 output_dir="$(pwd)/dist"
 
 echo "Building sponsors..."
@@ -28,6 +32,15 @@ for repo in "${repos[@]}"; do
   echo "Building GitHub contributors for ${repo}..."
   export CONTRIBKIT_GITHUB_CONTRIBUTORS_REPO="${repo}"
   npx contribkit --outputDir="${output_dir}" -w=800 --name="github.${repo}" --force
+done
+popd || exit 1
+
+echo "Building GitHub contributions..."
+pushd configs/githubContributions || exit 1
+for account in "${github_accounts[@]}"; do
+  echo "Building GitHub contributions for account ${account}..."
+  export CONTRIBKIT_GITHUB_CONTRIBUTIONS_LOGIN="${account}"
+  npx contribkit --outputDir="${output_dir}" --name="githubContributions.${account}"  --force
 done
 popd || exit 1
 
