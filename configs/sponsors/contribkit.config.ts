@@ -176,7 +176,6 @@ export default defineConfig({
           compose.addSpan(30);
 
           const padding = 20; // Padding between supporters
-          let currentX = padding;
           const supporters = [...specialSupporters];
 
           while (supporters.length) {
@@ -199,8 +198,7 @@ export default defineConfig({
             }
 
             // Center row horizontally
-            const startX = (config.width! - rowWidth + padding) / 2;
-            currentX = startX;
+            let currentX = (config.width! - rowWidth + padding) / 2;
 
             // Add supporters in row
             for (const supporter of row) {
