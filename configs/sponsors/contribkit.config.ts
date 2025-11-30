@@ -142,7 +142,7 @@ function createWrappedSponsorSvg(
   const scaledHeight = svgHeight * scale;
 
   return `
-  <a xlink:href="${sponsor.url}" class="contribkit-link" target="_blank" id="${sponsor.name.replace(/\s+/g, '')}">
+  <a xlink:href="${sponsor.url}" class="contribkit-link" target="_blank" id="${sponsor.name.replaceAll(/\s+/g, '')}">
     <svg x="${x}" y="${y}" width="${scaledWidth}" height="${scaledHeight}" viewBox="0 0 ${svgWidth} ${svgHeight}">
       <rect width="${svgWidth}" height="${svgHeight}" fill="transparent" />
       ${svgContent}
@@ -156,7 +156,7 @@ function extractSvgDimensions(svgContent: string): { width: number, height: numb
   const viewBoxMatch = svgContent.match(/viewBox=['"]([^'"]*)['"]/);
   if (viewBoxMatch) {
     const [, minX, minY, width, height] = viewBoxMatch[1].split(/\s+/).map(Number);
-    if (!isNaN(width) && !isNaN(height)) {
+    if (!Number.isNaN(width) && !Number.isNaN(height)) {
       return { width, height };
     }
   }
@@ -165,8 +165,8 @@ function extractSvgDimensions(svgContent: string): { width: number, height: numb
   const widthMatch = svgContent.match(/width=['"]([^'"]*)['"]/);
   const heightMatch = svgContent.match(/height=['"]([^'"]*)['"]/);
 
-  const width = widthMatch ? parseInt(widthMatch[1]) : 200;
-  const height = heightMatch ? parseInt(heightMatch[1]) : 100;
+  const width = widthMatch ? Number.parseInt(widthMatch[1]) : 200;
+  const height = heightMatch ? Number.parseInt(heightMatch[1]) : 100;
 
   return { width, height };
 }
