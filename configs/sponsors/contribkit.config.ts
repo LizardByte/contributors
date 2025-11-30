@@ -2,6 +2,7 @@ import {
   defineConfig,
   tierPresets,
 } from '@lizardbyte/contribkit'
+import { extractSvgDimensions, createWrappedSponsorSvg } from './svg-utils.js'
 
 const createThemeAwareSvgStyle = (pathClass: string, lightColor: string = '#000000', darkColor: string = '#ffffff') => `
       <style>
@@ -127,49 +128,6 @@ const specialSupporters = [
   },
 ];
 
-// Function to create wrapped SVG for a special sponsor
-function createWrappedSponsorSvg(
-    sponsor: { name: string, url: string },
-    svgContent: string,
-    svgWidth: number,
-    svgHeight: number,
-    height: number,
-    x: number,
-    y: number
-): string {
-  const scale = height ? height / svgHeight : 1;
-  const scaledWidth = svgWidth * scale;
-  const scaledHeight = svgHeight * scale;
-
-  return `
-  <a xlink:href="${sponsor.url}" class="contribkit-link" target="_blank" id="${sponsor.name.replace(/\s+/g, '')}">
-    <svg x="${x}" y="${y}" width="${scaledWidth}" height="${scaledHeight}" viewBox="0 0 ${svgWidth} ${svgHeight}">
-      <rect width="${svgWidth}" height="${svgHeight}" fill="transparent" />
-      ${svgContent}
-    </svg>
-  </a>`;
-}
-
-// Function to extract dimensions from SVG content
-function extractSvgDimensions(svgContent: string): { width: number, height: number } {
-  // Try to get dimensions from viewBox first
-  const viewBoxMatch = svgContent.match(/viewBox=['"]([^'"]*)['"]/);
-  if (viewBoxMatch) {
-    const [, minX, minY, width, height] = viewBoxMatch[1].split(/\s+/).map(Number);
-    if (!isNaN(width) && !isNaN(height)) {
-      return { width, height };
-    }
-  }
-
-  // Try to get from width/height attributes
-  const widthMatch = svgContent.match(/width=['"]([^'"]*)['"]/);
-  const heightMatch = svgContent.match(/height=['"]([^'"]*)['"]/);
-
-  const width = widthMatch ? parseInt(widthMatch[1]) : 200;
-  const height = heightMatch ? parseInt(heightMatch[1]) : 100;
-
-  return { width, height };
-}
 
 export default defineConfig({
   tiers: [

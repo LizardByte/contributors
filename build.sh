@@ -18,6 +18,17 @@ github_accounts=(
 
 output_dir="$(pwd)/dist"
 
+# Debug output for CI environment
+echo "GITHUB_JOB: ${GITHUB_JOB:-not set}"
+
+# Check if we're running in a GitHub Actions job named "build"
+# If so, skip all token-dependent sections since secrets won't be available
+if [[ "${GITHUB_JOB}" = "build" ]]; then
+  echo "Running in GitHub Actions 'build' job - skipping all token-dependent sections"
+  echo "Done!"
+  exit 0
+fi
+
 echo "Building sponsors..."
 pushd configs/sponsors || exit 1
 npx contribkit --outputDir="${output_dir}" -w=800 --name=sponsors --force
