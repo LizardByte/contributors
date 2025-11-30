@@ -11,7 +11,7 @@ export function extractSvgDimensions(svgContent: string): { width: number; heigh
   // Try to get dimensions from viewBox first
   const viewBoxMatch = svgContent.match(/viewBox=['"]([^'"]*)['"]/);
   if (viewBoxMatch) {
-    const [minX, minY, width, height] = viewBoxMatch[1].split(/\s+/).map(Number);
+    const [, , width, height] = viewBoxMatch[1].split(/\s+/).map(Number);
     // Check that both width and height are valid numbers (not NaN and not undefined)
     if (!Number.isNaN(width) && !Number.isNaN(height) && width !== undefined && height !== undefined) {
       return { width, height };
