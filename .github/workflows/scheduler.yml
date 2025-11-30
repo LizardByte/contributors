@@ -42,28 +42,32 @@ jobs:
         run: npm install
 
       - name: Setup env
+        env:
+          SECRET_GH_BOT_TOKEN: ${{ secrets.GH_BOT_TOKEN }}
+          SECRET_PATREON_CREATOR_TOKEN: ${{ secrets.PATREON_CREATOR_TOKEN }}
+          SECRET_CROWDIN_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
         run: |
           # sponsors
           {
-            echo "CONTRIBKIT_GITHUB_TOKEN=${{ secrets.GH_BOT_TOKEN }}"
-            echo "CONTRIBKIT_GITHUB_LOGIN=${{ github.repository_owner }}"
-            echo "CONTRIBKIT_PATREON_TOKEN=${{ secrets.PATREON_CREATOR_TOKEN }}"
+            echo "CONTRIBKIT_GITHUB_TOKEN=${SECRET_GH_BOT_TOKEN}"
+            echo "CONTRIBKIT_GITHUB_LOGIN=${GITHUB_REPOSITORY_OWNER}"
+            echo "CONTRIBKIT_PATREON_TOKEN=${SECRET_PATREON_CREATOR_TOKEN}"
           } >> ./configs/sponsors/.env
 
           # crowdin contributors
           {
-            echo "CONTRIBKIT_CROWDIN_TOKEN=${{ secrets.CROWDIN_TOKEN }}"
+            echo "CONTRIBKIT_CROWDIN_TOKEN=${SECRET_CROWDIN_TOKEN}"
           } >> ./configs/crowdin/.env
 
           # github contributors
           {
-            echo "CONTRIBKIT_GITHUB_CONTRIBUTORS_TOKEN=${{ secrets.GH_BOT_TOKEN }}"
-            echo "CONTRIBKIT_GITHUB_CONTRIBUTORS_LOGIN=${{ github.repository_owner }}"
+            echo "CONTRIBKIT_GITHUB_CONTRIBUTORS_TOKEN=${SECRET_GH_BOT_TOKEN}"
+            echo "CONTRIBKIT_GITHUB_CONTRIBUTORS_LOGIN=${GITHUB_REPOSITORY_OWNER}"
           } >> ./configs/github/.env
 
           # github contributions
           {
-            echo "CONTRIBKIT_GITHUB_CONTRIBUTIONS_TOKEN=${{ secrets.GH_BOT_TOKEN }}"
+            echo "CONTRIBKIT_GITHUB_CONTRIBUTIONS_TOKEN=${SECRET_GH_BOT_TOKEN}"
           } >> ./configs/githubContributions/.env
 
       - name: Setup dist
