@@ -1,16 +1,9 @@
 ---
 name: Scheduler
-permissions:
-  contents: read
+permissions: {}
 
 on:
   pull_request:
-    branches:
-      - master
-    types:
-      - opened
-      - reopened
-      - synchronize
   push:
     branches:
       - master
@@ -20,6 +13,8 @@ on:
 
 jobs:
   update:
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -97,7 +92,7 @@ jobs:
         with:
           github_token: ${{ secrets.GH_BOT_TOKEN }}
           author_email: ${{ secrets.GH_BOT_EMAIL }}
-          author_name: ${{ secrets.GH_BOT_NAME }}
+          author_name: ${{ vars.GH_BOT_NAME }}
           branch: dist
           directory: dist
           force: false
