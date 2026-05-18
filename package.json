@@ -27,7 +27,7 @@
     "test:typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@lizardbyte/contribkit": "2025.1130.1103"
+    "@lizardbyte/contribkit": "2026.518.124816"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
