@@ -33,8 +33,8 @@ echo "Building sponsors..."
 pushd configs/sponsors || exit 1
 npx contribkit --outputDir="${output_dir}" -w=800 --name=sponsors --force
 npx contribkit --outputDir="${output_dir}" -w=1800 --name=sponsors.wide
-npx contribkit --outputDir="${output_dir}" -w=800 --name=sponsors.part1 --filter=">=9.9"
-npx contribkit --outputDir="${output_dir}" -w=800 --name=sponsors.part2 --filter="<9.9"
+npx contribkit --outputDir="${output_dir}" -w=800 --name=sponsors.part1 --filter=">=10"
+npx contribkit --outputDir="${output_dir}" -w=800 --name=sponsors.part2 --filter="<10"
 popd || exit 1
 
 echo "Building GitHub contributors..."
