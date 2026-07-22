@@ -3,7 +3,6 @@ import { defineConfig, tierPresets } from '@lizardbyte/contribkit'
 export default defineConfig({
   githubContributions: {
     login: process.env.CONTRIBKIT_GITHUB_CONTRIBUTIONS_LOGIN,
-    token: process.env.CONTRIBKIT_GITHUB_CONTRIBUTIONS_TOKEN,
     logarithmicScaling: false,
     maxContributions: 100,
   },
