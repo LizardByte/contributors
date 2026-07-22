@@ -31,6 +31,8 @@
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
+    "@swc/core": "1.15.46",
+    "@swc/jest": "0.2.39",
     "@types/jest": "30.0.0",
     "@types/node": "25.9.5",
     "eslint": "10.7.0",
@@ -39,23 +41,26 @@
     "jest": "30.4.2",
     "jest-junit": "17.0.0",
     "npm-run-all2": "9.0.2",
-    "ts-jest": "29.4.11",
     "typescript": "7.0.2"
   },
   "jest": {
-    "preset": "ts-jest/presets/default-esm",
     "testEnvironment": "node",
-    "extensionsToTreatAsEsm": [
-      ".ts"
-    ],
     "moduleNameMapper": {
       "^(\\.{1,2}/.*)\\.js$": "$1"
     },
     "transform": {
       "^.+\\.tsx?$": [
-        "ts-jest",
+        "@swc/jest",
         {
-          "useESM": true
+          "jsc": {
+            "parser": {
+              "syntax": "typescript"
+            },
+            "target": "es2021"
+          },
+          "module": {
+            "type": "commonjs"
+          }
         }
       ]
     },
