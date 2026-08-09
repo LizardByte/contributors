@@ -27,6 +27,7 @@ jobs:
           path: dist
           persist-credentials: false  # prevent using GITHUB_TOKEN to commit
           fetch-depth: 0
+          filter: blob:none
 
       - name: Set node
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020  # v7.0.0
