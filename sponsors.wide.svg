@@ -147,10 +147,10 @@ text {
   </a><text x="900" y="200" text-anchor="middle" class="contribkit-tier-title">Gold Sponsors</text><a href="https://www.patreon.com/user?u=48492504" class="contribkit-link" target="_blank" id="Christian">
   <text x="900" y="313" text-anchor="middle" class="contribkit-name" fill="currentColor">Christian</text>
   
-  <clipPath id="c6d5799">
+  <clipPath id="cd20dea">
     <rect x="865" y="225" width="70" height="70" rx="35" ry="35" />
   </clipPath>
-  <image x="865" y="225" width="70" height="70" href="data:image/webp;base64,UklGRhQCAABXRUJQVlA4IAgCAADwDQCdASpQAFAAPm00lUekIyIhKlQI8IANiWIAwjyh6Q+UDp5OkfCuHnBAPMB+u/+A4AD/AdQBvNX7d+gA4IO8GUDDBNCEt8LCfW2YWRTNT756jRvpKYhfFZSCL2w0PqpgpjIzViba0/8CaFfpia9lNKs4RP/rYAAA/up5LNpn/0Yfs3+gcFr/+emeemejYyzYAhb7bnR2+wW93Oib+Tn5Nt+9f09NyEqoCA7dx77fgYpJ62hNNHuX7rjC1mDswkTiYqEI8GfYJppp3QtV+OyZ3uCKIAX86hm8FZpZoWQmm19H5vx/7xBSHeIh3lMCsSiPP7SxD4Rj2luyjChUEdxhGh05wAZRDu6ENm4C9+8VRN/LvD+cPmA6xI+G3fgf3jyeIoB+f0CS+jPcOTOa6uw/xuLvIY71d9MowFEt5bwe6dzttdIyQdlfIIUBY1ZxroHaHW+1q23GlZdr6Y6K62WnPObYvH0uywSQzjMLwkHrE6jGNOVSKsKfz+JkaLvSNHNDfzAQAiTszURc92vBOePW6O4mKEGQeDJl+eqcVtPHqD3DaPLiGbv3b6fD6hWzhh1pTYMEHT/XAoznwSCcbVtW1s422oM0n7V/ktQmhsNPMk1le3j+Iwsk8HQ9DnwJCo6Q9eX3/xCM97Dn24TVUJIWYUUEJ6q1xhLl5LvLvD6cgacM4y6DlAAA" clip-path="url(#c6d5799)"/>
+  <image x="865" y="225" width="70" height="70" href="data:image/webp;base64,UklGRhICAABXRUJQVlA4IAYCAADwDQCdASpQAFAAPm00lUckIyIhKlYI8IANiUAXwIyFD8sjzz0T+wDLTcauhP8wH65fzPgAP8B1B+84/td6ACei93TP1HdDkhE7GWrLPFfPAXwqztmon+0bhnebnD/eD7XfXE07krYOP0KSK922Th7vkRRJvUIuqwAA/urlrwBI//0Yf/jSP+mkaVP/56Z/cv9baGg34tQtY8PHRHZnNZoJXg039RDHBWqv4WePt51Tm0NoU4u81E6EcsNZXo8Brwne56zxU9/fYEaNZdSWCb6dxpXubzsbyJi2K5mkPSThTrtZSeGVTx+lJC7ywqHlmJmuKE/yNmdBbUJoE4SG4C7jFE1P4EdpwhuZO+i+HvMeWp+KkxebJ88K/1Xt6BYAnlKbOeYegnfLlgWXj8uK1a8omgNAppqkEeVyzVLXRabd9plDrvKsGYCQc1Q1tdjYw0xUMsQ8+QVGFs6nwHyVh7/e/JK/cnTUHAATq7aidrqIJM1aQcPcVmmSMY8LoANUIgRyZw+33tEOQwL5xYutRvx6LCMK5LHXUhXe/yDiwdLLcACz0T7fY2H5GyENzZl9Q5m0IMsB5MmXDKHGoaw8djCunaLoqoT6Kf8CzfbTx21LPlfHhjYXmQ9ffg7ekBdiN8wHNvnFCcn3mGkQ8mbcDYk34+/pCQre2jpmnMkvUQrTIhkxR8gAAA==" clip-path="url(#cd20dea)"/>
 </a><text x="900" y="370" text-anchor="middle" class="contribkit-tier-title">Silver Sponsors</text><a href="https://www.patreon.com/user?u=73090916" class="contribkit-link" target="_blank" id="Ringofpower">
   <text x="700" y="463" text-anchor="middle" class="contribkit-name" fill="currentColor">Ringofp...</text>
   
@@ -353,17 +353,17 @@ text {
 </a>
 <a href="https://www.patreon.com/user?u=29650973" class="contribkit-link" target="_blank" id="Matt">
   
-  <clipPath id="c8be3b2">
+  <clipPath id="c555575">
     <rect x="502.5" y="647" width="35" height="35" rx="17.5" ry="17.5" />
   </clipPath>
-  <image x="502.5" y="647" width="35" height="35" href="data:image/webp;base64,UklGRn4BAABXRUJQVlA4IHIBAADQBwCdASoyADIAPm0ymEgkIqKhKBgIqIANiUAZvgQ1gugDzAOkVb6tIJ4nM+BqPaAUkgaSqvL19Zgbeb0UFMMWZLbQyfaUAAD+8i2UnxVvVMreb//64D/+cB//Qd/SKoCa83FfyCprUQfzLKS3YRjV/xFdUqvznJH/GAyET/evxube7K0YNUCBfVA56sT950gsuBcKfSvXGn8k97oX+bmgzbTkfik2kw6Br3Qx3rReKqEifg7j/HaKbzB1gaxEms1Igct0n7AXZuYGPvIDBPeBrezf4mZ/+/mikax+NvHtV5v2IEbcRgbfjti1TNhSuf4yf9P+iWdBHxIwv+3cPe1tkDpaVLNK/FKqLEff/5MJj+PW/k7ks5Krc1jW1S2dyh4hYhe6OfN3WdH8K+TINr+RnxCXZyb28eTWa/qNOGqreQEDVIJ2P6Yrf1WbP9MVrZ8LwIF5Md/1NKvu4T4mr7H671ne6DZ7AV6Xp5YCei89bcAA" clip-path="url(#c8be3b2)"/>
+  <image x="502.5" y="647" width="35" height="35" href="data:image/webp;base64,UklGRn4BAABXRUJQVlA4IHIBAADwBwCdASoyADIAPm0yl0gkIqIhKBQIqIANiUAZ8oQggDzAOkwJVR5MVE0y9IQBsQqDFtjrdz6FdQDc6wi2kCvDTqZcZ4bboZAA/vL2NVNf1TK4F3//YO//0Hf/6Vj9zhpFRwBIcRCYKu2l76pAY12xHP/CaUNqDi5w/G5H3dP+Thxy/BumZbsslf1rnm4xsLD+FD9Pd5xHN/np/6efm5oCbw8q10WH9R45vzJKnLSIV/Q3Rq/8m3Gph/jawqi+bIfJ8e+D/5s4Ad679Ki/4LIekJrgZZfyqeVtYeRt49o0fz/znOXtDpX8dsbJ2/sjnf6ZP+n/RLXz/6bFv/kQk1os+EJCoyuWf/x0oeIX3/5MKx/Hrfv/ky6WIQZKO2l0L/8AOJ59G1oWJlaEs3401pD0xgiwmd+C7dx4b4XePvXJSQIfe8haPtbIdH+jFYw7Zs/0xfIcGwxLvqeXBu/4lpRfPRfZYkUM4FrVsyyQUfVpQAAA" clip-path="url(#c555575)"/>
 </a>
 <a href="https://www.patreon.com/user?u=4615892" class="contribkit-link" target="_blank" id="DarkSpace">
   
-  <clipPath id="c73c429">
+  <clipPath id="ce4a070">
     <rect x="540.5" y="647" width="35" height="35" rx="17.5" ry="17.5" />
   </clipPath>
-  <image x="540.5" y="647" width="35" height="35" href="data:image/webp;base64,UklGRj4BAABXRUJQVlA4IDIBAAAwCACdASoyADIAPm00lkikIqIhJhVYAIANiWIC4AG8A7CM2P6eAiQG2A0IDfAOk98jMKPKvZEKVznvYQWbV4ncKROOaopNpPgGeAD+jNUNMf//93m/7eb/vAn/Nb/+Sn3lcXejXideFzD/gcjdEE9E3vzXb8VP6V9DvI9bmcseB+OO3I2GyJh7GPHByLs10PyV0gHwST0Esfu5WYNIFYKG4yWuHmt4GZpf3MYEr5D++S3bOY8l+fKZLsgDst/n/y5rDfTTHQH/ig1Jf2d5ARz54wIVNp+I/Fvh9tkLICdZtKbADATF3YoPCVan/hk/ZzssJNBAz+wd3m9n1YXOtgGqwWhVjbSRU4I2JKMzW/9LP4sA9c8qC7034UP6rD3VxHWdUq0Ag3cjpeq7wP9BVHT2AAA=" clip-path="url(#c73c429)"/>
+  <image x="540.5" y="647" width="35" height="35" href="data:image/webp;base64,UklGRjwBAABXRUJQVlA4IDABAAAwCACdASoyADIAPm00lkikIqIhJhVYAIANiWIC4AEpdB00DarGANsBoQG+AdKL5KobYqPH0cel7eTBsycPd9iRMVgKayDFqAYUAAD79xY38tr/+7zf7eb/eBP94v/+Snruqp06X6h4nvW7IpfzaYpHKr4Hyo75yz5QYjeCKL0s8pntgj4YaqA9jGzfVGWx+RcL7vhu/mvjkk5XfsOAxGQD9JfWE9phihO/ZUL++TuZIWao4jWcWrGzuds9H+f/Lnro9NMdAf+LC+P6+kTOvQtkaubGvrY9LmxXy0IWyj1lSuNmJW3q7y4wF+shS/C/BHvVqGn6QNReXbmpIE8GyxtZLBb7HeH6jpHBqboqFT/GBcos47tlt1W+sycKM2ZzDBl/QaYhVLyU1lw5WUAFnQAA" clip-path="url(#ce4a070)"/>
 </a>
 <a href="https://www.patreon.com/flaki" class="contribkit-link" target="_blank" id="Szmozsánszky">
   
@@ -507,10 +507,10 @@ text {
 </a>
 <a href="https://www.patreon.com/user?u=7545957" class="contribkit-link" target="_blank" id="Distant">
   
-  <clipPath id="ca20910">
+  <clipPath id="c8e7154">
     <rect x="1338.5" y="647" width="35" height="35" rx="17.5" ry="17.5" />
   </clipPath>
-  <image x="1338.5" y="647" width="35" height="35" href="data:image/webp;base64,UklGRhQBAABXRUJQVlA4IAgBAAAwBgCdASoyADIAPm02lkgkIyIhKBgIAIANiWMAylEAJpaIikUs3LPs70SpMdQXtSY21xau3XGbF6EAAP7vwtpLq/1d+dv51vB+vWlubsHoaiv9K4lyP+6AHwHQUf/Yl+BaZf1P+fRuQT3p2gl03e51QVSZZ4BUQri9+0zn8udpdvh6utDFwD3cepni5f+zHLanpKBV1CiQnY8A4q3c0vc60XyMybySX6CVwr/KRmyKlqIex89PlQzCLOI+rUop36kxUI1zG+FN+PTuQ/M/4b/A71luN4qG8VQy0OEQA10zgSDtfx+pHOGVphNLntiYLJcL275zNVeNatH5FNeCQpSEcDV+kgGT8AA=" clip-path="url(#ca20910)"/>
+  <image x="1338.5" y="647" width="35" height="35" href="data:image/webp;base64,UklGRhgBAABXRUJQVlA4IAwBAABwBgCdASoyADIAPm02lkgkIyIhKBgIAIANiWMAybakuNAKfUUr1KKxXbgrYlfp4+X9fvV8hBT9b94jroAA/u/jqqmv/V2vm5k9/zY+RQ68tlICot+9KUPH9Bavh/ev+R/9/4NWzvsAZTxIT3bgsX9X/1wGpKTyOZkLm6fy/FfAGVZU+mSfoxNfHUfuoXL5KZ7fC5V0ntKijYj0EVWef+Xc60XyJYCM963fWnz6Yxt3SqkQ1HF8fY9wdtU1/k6Y13QedJdNiOG2HGy0VZvwqw7ZwMC6qEr2sfdAEMRc8AkB4dZe4JhlhZo1498k55+IcR60ugyJlDtM2jAUiMxER6LCI8hMSdgkguaqVnAA" clip-path="url(#c8e7154)"/>
 </a>
 <a href="https://www.patreon.com/user?u=28159205" class="contribkit-link" target="_blank" id="DoomedSoul">
   
@@ -653,10 +653,10 @@ text {
 </a>
 <a href="https://www.patreon.com/Kazyini" class="contribkit-link" target="_blank" id="Christian">
   
-  <clipPath id="cda2d38">
+  <clipPath id="c081eda">
     <rect x="787.5" y="685" width="35" height="35" rx="17.5" ry="17.5" />
   </clipPath>
-  <image x="787.5" y="685" width="35" height="35" href="data:image/webp;base64,UklGRjQBAABXRUJQVlA4ICgBAACwBgCdASoyADIAPm00l0gkIqIhJBgJuIANiUAnWdqg8hkQ0MOcXfB10xDu/oO7bofFg1RH0HmiqiFM0p4DsAD+78LeaCcS7f/z8z//DD//xpHyn+Rtx8DeAdjEl4bFdP0U0oblIpxWhIO99x2NXvmDL5PuzX3kXRcKj2bKUlZHWV59i47BVsR7gREfuQYiJIHFzCY7RhJrU+4EGBxQ/UzIB84JA/QCe/WG51olVCVP36tr8/8//Epgi9QjlUG/w17RSbaH+P+v/5s9eFN5h2Y5n3eGIKVFIKrZmwt6Bo8hKVfPMgRq+s9wDxsLiBUV6NLkf9zyBkmapwR09PIJ6Qgmztt+zIw9RQCrYowa6UqJq/U/x/x/auhxSL2ub+TDu8z/vUQNnVQgAA==" clip-path="url(#cda2d38)"/>
+  <image x="787.5" y="685" width="35" height="35" href="data:image/webp;base64,UklGRjABAABXRUJQVlA4ICQBAADwBgCdASoyADIAPm0yl0gkIqIhJhVZOIANiUAadQJX+0BGxDW34lmtIzmLTBtfbCsN1Z8OfaKdp1l2HTb9DDjgAP7v4651AJJuf/+fmf/4Yf/+NI+HWgOutWC2840Vv33QDuNtNLAng98hT0/wWHGnqX+p++uiq7UzjOMvdENslDLfT98GHZ1OR3OVGuUskqgW1kxbWjSB1g8paK6brzNrF7WohB2yJXoXLL+wC6OZjPHiU1jOs/8/5u35Teeo6hwsVcohYn+n/X/809Ws7mxGtujAxBLXi6Y+7vtti3EbypHqOemKy3CnAypI7LGT7oAgWv7S/q4zQfzcAMKB7iQXMxP7lxIGioqdM35khxv8f8SjDSIF3D9QAqYjvpLiByZFp+AA" clip-path="url(#c081eda)"/>
 </a>
 <a href="https://github.com/jisheir" class="contribkit-link" target="_blank" id="jisheir">
   
