@@ -29,6 +29,19 @@ jobs:
           fetch-depth: 0
           filter: blob:none
 
+      - name: Prepare dist history
+        id: dist-history
+        working-directory: dist
+        run: |
+          amend=true
+          commit_count="$(git rev-list --count HEAD)"
+          if ((commit_count > 1)); then
+            git checkout --orphan deployment
+            amend=false
+          fi
+
+          echo "amend=${amend}" >> "${GITHUB_OUTPUT}"
+
       - name: Set node
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020  # v7.0.0
         with:
@@ -72,7 +85,7 @@ jobs:
           rm -rf dist/*
 
           # setup .gitignore
-          echo ".cache.json" >> dist/.gitignore
+          printf '.cache.json\n' > dist/.gitignore
 
       - name: Update
         env:
@@ -96,5 +109,6 @@ jobs:
           author_name: ${{ vars.GH_BOT_NAME }}
           branch: dist
           directory: dist
-          force: false
+          amend: ${{ steps.dist-history.outputs.amend }}
+          force: true
           message: "chore: update contributors"
