@@ -93,6 +93,12 @@ describe('Regression Tests', () => {
           expectedWidth: 248,
           expectedHeight: 248,
         },
+        {
+          name: 'Cloudsmith',
+          svg: '<svg width="33" height="32" viewBox="0 0 33 32"></svg>',
+          expectedWidth: 33,
+          expectedHeight: 32,
+        },
       ];
 
       testCases.forEach(testCase => {
