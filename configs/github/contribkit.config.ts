@@ -8,22 +8,22 @@ export default defineConfig({
     },
     {
       title: 'Hackers',
-      monthlyDollars: 10,
+      monthlyDollars: 12,
       preset: tierPresets.medium,
     },
     {
       title: 'Wizards',
-      monthlyDollars: 50,
+      monthlyDollars: 25,
       preset: tierPresets.large,
     },
     {
       title: 'Legends',
-      monthlyDollars: 100,
+      monthlyDollars: 50,
       preset: tierPresets.xl,
     },
     {
       title: 'Champions',
-      monthlyDollars: 300,
+      monthlyDollars: 150,
       preset: tierPresets.xl,
     },
   ],
