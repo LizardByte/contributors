@@ -71,7 +71,6 @@ jobs:
           # github contributors
           {
             echo "CONTRIBKIT_GITHUB_CONTRIBUTORS_TOKEN=${SECRET_GH_BOT_TOKEN}"
-            echo "CONTRIBKIT_GITHUB_CONTRIBUTORS_LOGIN=${GITHUB_REPOSITORY_OWNER}"
           } >> ./configs/github/.env
 
           # github contributions
