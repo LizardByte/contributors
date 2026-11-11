@@ -2,9 +2,9 @@
 set -e
 
 repos=(
-  "build-deps"
-  "contribkit"
-  "Sunshine"
+  "LizardByte/contribkit"
+  "SunshineStream/Sunshine"
+  "Themerr/Themerr"
 )
 
 crowdin_projects=(
@@ -41,8 +41,10 @@ echo "Building GitHub contributors..."
 pushd configs/github || exit 1
 for repo in "${repos[@]}"; do
   echo "Building GitHub contributors for ${repo}..."
-  export CONTRIBKIT_GITHUB_CONTRIBUTORS_REPO="${repo}"
-  npx contribkit --outputDir="${output_dir}" -w=800 --name="github.${repo}" --force
+  repo_name="${repo#*/}"
+  CONTRIBKIT_GITHUB_CONTRIBUTORS_LOGIN="${repo%%/*}" \
+    CONTRIBKIT_GITHUB_CONTRIBUTORS_REPO="${repo_name}" \
+    npx contribkit --outputDir="${output_dir}" -w=800 --name="github.${repo_name}" --force
 done
 popd || exit 1
 
